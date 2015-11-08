@@ -61,4 +61,8 @@ class Player():
         available_moves = tile.adjacent_moves()
         r = random.randint(0, len(available_moves) - 1)
         self.do_action(available_moves[r])
-
+    
+    def inspect(self, item):
+        """prints an item's description"""
+        print(item.description)
+        
