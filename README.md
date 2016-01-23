@@ -11,17 +11,17 @@ For an in-depth tutorial, please see [How to Write a Text Adventure in Python](h
 To Do List
 ----------
 ### player.py = **Yath**
-- define action and properties of input text here
-- remove all current inventory items or edit them
+- define action and properties of input text here																								// Completed
+- remove all current inventory items or edit them																								// Completed
 
 ### actions.py = **Yath**
-- link input action from player.py to hotkey
+- link input action from player.py to hotkey																										// Completed
 
 ### items.py = **Jake**
 - 5 items need to be created or one items to be collected 5 times
 
 ### tiles.py = **Yath** (input/validation class, room), **Jake** (intro text and answers)
-- input/validation action needs to be added to maptile class 
+- input/validation action needs to be added to maptile class
 - every room needs a separate class
 	- define intro text
 	- include input/validation action from maptile class

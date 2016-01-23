@@ -1,12 +1,13 @@
 import random
 import items, world
+import re
 
 __author__ = 'Phillip Johnson'
 
 
 class Player():
     def __init__(self):
-        self.inventory = [items.Gold(15), items.Rock()]
+        self.inventory = []
         self.hp = 100
         self.location_x, self.location_y = world.starting_position
         self.victory = False
@@ -62,3 +63,6 @@ class Player():
         r = random.randint(0, len(available_moves) - 1)
         self.do_action(available_moves[r])
 
+    def interact(self, tile):
+        """Interacts with Puzzle on Title so that player can solve riddles"""
+        user_answer = raw_input("Answer Question")

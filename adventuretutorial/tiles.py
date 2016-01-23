@@ -43,6 +43,17 @@ class MapTile:
 
         return moves
 
+    def quest(self):
+        """Checks User Answer and Returns a Puzzle Item"""
+        while True:
+            if(re.match(quest_answer, user_answer)):
+                return "Correct"
+            print("Incorrect Answer, Try Again")
+            user_answer = raw_input
+
+    def quest_answer(self):
+        """Answer to the Quest"""
+        raise NotImplementedError()
 
 class StartingRoom(MapTile):
     def intro_text(self):
@@ -172,3 +183,19 @@ class LeaveCaveRoom(MapTile):
 
     def modify_player(self, player):
         player.victory = True
+
+class Room1(MapTile):
+    def intro_text(self):
+        return """
+        Puzzle 1
+        """
+
+    def quest_answer(self)
+
+    def quest(self)
+
+    def add_loot(self, the_player):
+        the_player.inventory.append(self.item)
+
+    def modify_player(self, the_player):
+        self.add_loot(the_player)

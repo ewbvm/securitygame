@@ -57,3 +57,8 @@ class Attack(Action):
 class Flee(Action):
     def __init__(self, tile):
         super().__init__(method=Player.flee, name="Flee", hotkey='f', tile=tile)
+
+class interact(Action):
+    """Allows the player to Answer the Room Puzzle"""
+    def __init__(self, tile):
+        super().__init__(method=Player.interact, name="interact", hotkey="i", tile=tile)
