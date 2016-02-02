@@ -1,0 +1,3 @@
+	EmpireState	ForbiddenCity	BigBen		
+StartingRoom	NewYork	Beijing	London	FinalBoss	LeaveGameRoom
+	StatueLiberty	GreatWall	Parliament		
